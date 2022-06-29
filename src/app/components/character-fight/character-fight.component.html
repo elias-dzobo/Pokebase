@@ -1,3 +1,5 @@
-<div class="fighter">
-
+<div id="fighter">
+    <ng-container *ngIf="pokeService.getShouldShowFighter()">
+        <img class="char" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/35.png">
+    </ng-container>
 </div>

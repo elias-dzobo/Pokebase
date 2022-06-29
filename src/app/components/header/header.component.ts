@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   random!:number;
   constructor() {
-    setInterval(() => this.random = Math.random(), 500);
+    setInterval(() => this.random = Math.random() * 10, 500);
    }
 
   ngOnInit(): void {

@@ -2,10 +2,12 @@ section {
     /* border: 1px solid black; */
     width: 40ch;
     height: 33ch;
+    margin-top: 20px;
 }
 
 h2 {
     text-align: center;
+    color: aliceblue;
 }
 
 html, body, div, img {
@@ -15,7 +17,7 @@ html, body, div, img {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
+} 
 
 body {
     line-height: 1;
@@ -29,7 +31,7 @@ body {
 }
 
 .char {
-    border: 1px solid black;
+
     margin: 2px;
     width: 85px;
     height: 85px;

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PokeServiceService } from 'src/app/services/poke-service.service';
 
 @Component({
   selector: 'app-character-select',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharacterSelectComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private pokeService: PokeServiceService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  selectPokemon() {
+    this.pokeService.toggleFighter();
   }
 
 }

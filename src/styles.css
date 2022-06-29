@@ -3,4 +3,11 @@
 * {
     padding: 0;
     margin: 0;
+    
+}
+
+body {
+    background-image: url("https://i.pinimg.com/564x/33/c4/6e/33c46ea41e5b0fca20d30c9b7a2ca31a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

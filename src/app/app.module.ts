@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CharacterSelectComponent } from './components/character-select/character-select.component';
 import { CharacterFightComponent } from './components/character-fight/character-fight.component';
 import { StageComponent } from './components/stage/stage.component';
+import { PokeServiceService } from './services/poke-service.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { StageComponent } from './components/stage/stage.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PokeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
