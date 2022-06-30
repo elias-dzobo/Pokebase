@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/model/pokemon.model';
 
 @Component({
   selector: 'app-button',
@@ -12,7 +13,7 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectPokemon() {
+  selectPokemon(pokemon: Pokemon) {
     
   }
 

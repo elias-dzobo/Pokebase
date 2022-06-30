@@ -5,7 +5,7 @@
     <div class="charSelect">
         <ul>
             <li *ngFor="let char of pokemon">
-                <app-button> <img src= ""{{ char.url}}> </app-button>
+                <app-button [ngModel] = "char"> <img src= ""{{ char.url}}> </app-button>
             </li>
         </ul>
     </div>
