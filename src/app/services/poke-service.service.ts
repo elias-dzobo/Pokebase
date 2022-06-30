@@ -7,31 +7,6 @@ import { Pokemon } from '../model/pokemon.model';
 export class PokeServiceService {
   shouldShowFighter: boolean = false;
 
-  
-  pokemon: Pokemon[] = [
-    {
-      name: "Pikachu",
-      mainAbility: "Lightning",
-      stats: [{
-        hp: 100
-      }]
-    },
-    {
-      name: "Bulbasor",
-      mainAbility: "Plants",
-      stats: [{
-        hp: 100
-      }]
-    },
-    {
-      name: "Squirtle",
-      mainAbility: "Water",
-      stats: [{
-        hp: 100
-      }]
-    }
-  ]
-
   constructor() { }
 
   toggleFighter() {
@@ -42,7 +17,4 @@ export class PokeServiceService {
     return this.shouldShowFighter;
   }
 
-  getPokemonMock(id: number) {
-    return this.pokemon[id]; 
-  }
 }

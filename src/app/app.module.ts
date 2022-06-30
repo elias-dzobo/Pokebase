@@ -8,6 +8,8 @@ import { CharacterSelectComponent } from './components/character-select/characte
 import { CharacterFightComponent } from './components/character-fight/character-fight.component';
 import { StageComponent } from './components/stage/stage.component';
 import { PokeServiceService } from './services/poke-service.service';
+import { ButtonComponent } from './components/button/button.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { PokeServiceService } from './services/poke-service.service';
     HeaderComponent,
     CharacterSelectComponent,
     CharacterFightComponent,
-    StageComponent
+    StageComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [PokeServiceService],
   bootstrap: [AppComponent]

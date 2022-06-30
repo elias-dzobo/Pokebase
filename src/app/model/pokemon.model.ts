@@ -5,4 +5,5 @@ export interface Pokemon {
     stats: [
         {hp: number}
     ]; 
+    url: string 
 }
